@@ -53,6 +53,7 @@ with DAG(dag_id='weather_etl',
                   'weathercode': current_weather['weathercode']
             }
             return transformed_data
+<<<<<<< HEAD
 
         @task
         def load_weather_data(transformed_data):
@@ -94,3 +95,5 @@ with DAG(dag_id='weather_etl',
         weather_data = extract_weather_data()
         transformed_data = transform_weather_data(weather_data)
         load_weather_data(transformed_data)
+=======
+>>>>>>> 705557af7909b982ffd37217fa35b71f6ff3094f
